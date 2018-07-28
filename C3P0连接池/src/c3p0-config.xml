@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+
+  <default-config>
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+	<property name="jdbcUrl">jdbc:mysql:///test</property>
+	<property name="user">root</property>
+	<property name="password">123</property>
+	<property name="initialPoolSize">5</property>
+	<property name="maxPoolSize">20</property>
+  </default-config>
+  
+  <named-config name="JDBC"> 
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+	<property name="jdbcUrl">jdbc:mysql:///Stu</property>
+	<property name="user">"D:/桌面/Desktop/文件夹集"sa</property>
+	<property name="password">123</property>
+  </named-config>
+  
+
+</c3p0-config>
