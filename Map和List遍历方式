@@ -1,0 +1,48 @@
+package com.kimile.collection;
+import java.util.*;
+import java.util.Map.Entry;
+public class TestDemo {
+	public static void main(String[] args) {
+		List list=new ArrayList();
+		Map<String,String> map=new HashMap<String, String>();
+		list.add(123);
+		list.add("exe");
+		map.put("key","521");
+		map.put("key2","love");
+		map.put("key3","520");
+		Iterator iterator = list.iterator();
+		while( iterator.hasNext()){
+			System.out.println(iterator.next());
+		}
+		System.out.println("-------------");
+		System.out.println(list);
+		System.out.println("-------------");
+		for(Object ob:list){
+			System.out.println(ob);
+		}
+		System.out.println("-------------");
+		System.out.println(list.get(0));
+		System.out.println("-------------");
+		System.out.println("-------------");
+		System.out.println("-------------");
+		for(String key:map.keySet()){
+			System.out.println(key+map.get(key));
+		}
+		System.out.println("-------------");
+		Iterator<Map.Entry<String, String>> iterator2 = map.entrySet().iterator();
+		while(iterator2.hasNext()){
+			//System.out.println(iterator2.next());
+			Entry<String, String> it = iterator2.next();
+			System.out.println(it.getKey()+it.getValue());
+		}
+		System.out.println("-------------");
+		for(Entry<String, String> en:map.entrySet()){
+			System.out.println(en.getKey()+en.getValue());
+		}
+		System.out.println("-------------");
+		for(String value:map.values()){
+			System.out.println(value);
+		}
+	}
+
+}
